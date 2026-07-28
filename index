@@ -165,7 +165,7 @@ let sortableInstances = [];
 
 // ---- Endpoint that emails results to injykhairy@gmail.com (see setup instructions) ----
 // Replace this with your deployed Google Apps Script Web App URL.
-const RESULTS_ENDPOINT_URL = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const RESULTS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycbxD-qciLz9-nA2d6JyGXEZFUgo7kAIHv1nUfihknWITYCd3uqBVnHI8zUMmjEJboFDn/exec";
 
 // Optional: capture a participant ID from the URL, e.g. ?pid=ABC123
 // (useful later if you link here from Prolific/MTurk)
