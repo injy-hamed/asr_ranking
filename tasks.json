@@ -27,7 +27,7 @@
         "text": "ثعلب بُنّي سريع يقفز فوق كلبٍ كسول."
       }
     ],
-    "audioUrl": "audio/task001.mp3"
+    "audioUrl": "audio/I01-C03-R01_001383-001835.wav"
   },
   {
     "id": "task002",
@@ -57,7 +57,7 @@
         "text": "جو اليوم مشمس حرارة معتدلة."
       }
     ],
-    "audioUrl": "audio/task002.mp3"
+    "audioUrl": "audio/I01-C03-R01_002969-003383.wav"
   },
   {
     "id": "task003",
@@ -87,6 +87,6 @@
         "text": "قررت الحكومة خفض أسعار الوقود بنسبة عشرة بالمئة."
       }
     ],
-    "audioUrl": "audio/task003.mp3"
+    "audioUrl": "audio/I01-C03-R01_005624-005859.wav"
   }
 ]
