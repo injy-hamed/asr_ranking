@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<title>ASR Ranking Task</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.2/Sortable.min.js"></script>
+<style>
+  body { font-family: 'Noto Sans Arabic','Segoe UI',Tahoma,Arial,sans-serif;
+         max-width: 700px; margin: 30px auto; color: #222; direction: rtl; text-align: right; }
+  h2 { font-size: 18px; }
+  .progress { font-size: 13px; color: #777; margin-bottom: 6px; }
+  .progress-bar-track { height: 6px; background: #e5e7eb; border-radius: 3px; margin-bottom: 16px; overflow: hidden; }
+  .progress-bar-fill { height: 100%; background: #2563eb; transition: width 0.2s; }
+  .instructions { background: #f5f7fa; padding: 12px 16px; border-radius: 6px; margin-bottom: 20px; font-size: 14px; line-height: 1.6; }
+  .audio-block { background: #fff; border: 1px solid #d0d7e2; border-radius: 8px; padding: 14px 16px; margin-bottom: 20px; }
+  .audio-block .audio-label { font-size: 13px; font-weight: bold; color: #444; margin-bottom: 8px; }
+  .audio-block audio { width: 100%; }
+  #pool {
+    min-height: 60px; border: 2px dashed #aaa; border-radius: 6px; padding: 10px;
+    display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; background: #fafafa;
+  }
+  .rank-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .rank-label { width: 70px; font-weight: bold; flex-shrink: 0; text-align: right; color: #555; }
+  .rank-bin {
+    flex: 1; min-height: 46px; border: 1px solid #ccc; border-radius: 6px;
+    background: #fff; padding: 6px; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end;
+  }
+  .sentence-card {
+    background: #e8f0fe; border: 1px solid #a9c4f5; border-radius: 5px;
+    padding: 6px 10px; font-size: 15px; line-height: 1.5; cursor: grab; max-width: 280px;
+  }
+  .sentence-card:active { cursor: grabbing; }
+  #status { margin-top: 10px; font-size: 13px; color: #555; }
+  #status.error { color: #dc2626; font-weight: bold; }
+  .nav-row { display: flex; justify-content: space-between; margin-top: 18px; }
+  button {
+    padding: 8px 18px; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;
+  }
+  #backBtn { background: #e5e7eb; color: #333; }
+  #backBtn:disabled { opacity: 0.4; cursor: not-allowed; }
+  #nextBtn { background: #2563eb; color: white; }
+  #nextBtn:disabled { background: #aaa; cursor: not-allowed; }
+  #introScreen { padding: 10px 0 30px; direction: ltr; text-align: left; }
+  #introScreen h1 { font-size: 20px; margin-bottom: 4px; }
+  #introScreen .instructions-block { background: #f5f7fa; padding: 16px 18px; border-radius: 6px; margin: 16px 0; font-size: 14px; line-height: 1.7; }
+  #introScreen label { display: block; font-size: 14px; font-weight: bold; margin-bottom: 6px; }
+  #annotatorNameInput {
+    width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 15px;
+    border: 1px solid #ccc; border-radius: 5px; direction: ltr; text-align: left;
+    font-family: inherit; margin-bottom: 16px;
+  }
+  #startBtn { background: #2563eb; color: white; padding: 10px 24px; }
+  #startBtn:disabled { background: #aaa; cursor: not-allowed; }
+  #introStatus { font-size: 13px; color: #777; margin-top: 8px; }
+  #doneScreen { display: none; text-align: center; padding: 40px 0; }
+  #doneScreen button { margin-top: 16px; }
+  #saveIndicator { font-size: 12px; color: #999; margin-top: 6px; height: 16px; }
+</style>
+</head>
+<body>
+
+<div id="introScreen">
+  <h1>ASR Transcript Ranking Task</h1>
+  <div class="instructions-block">
+    Welcome to this task! You will be shown around 500 sets of sentences, each set containing
+    six outputs from a speech-to-text (ASR) system. Your job is to rank the sentences within
+    each set by how accurately they match what was actually said — from most accurate (Rank 1)
+    to least accurate. You can give the same rank to more than one sentence if they are equally
+    accurate.
+    <br><br>
+    Your progress is saved automatically after every sample, so you can close this page at any
+    time and pick up exactly where you left off later — even from a different device. Just enter
+    the same name again below.
+    <br><br>
+    <b>Please enter your name below to begin or resume.</b>
+  </div>
+  <label for="annotatorNameInput">Name</label>
+  <input type="text" id="annotatorNameInput" placeholder="Enter your name (use must the same spelling every time)">
+  <div>
+    <button id="startBtn" disabled>Start / Resume</button>
+  </div>
+  <div id="introStatus"></div>
+</div>
+
+<div id="taskScreen" style="display:none;">
+  <div class="progress" id="progressText"></div>
+  <div class="progress-bar-track"><div class="progress-bar-fill" id="progressBarFill" style="width:0%"></div></div>
+  <h2>رتّب هذه النصوص المستخرجة آلياً حسب دقتها</h2>
+  <div class="audio-block">
+    <div class="audio-label">استمع إلى المقطع الصوتي الأصلي:</div>
+    <audio id="taskAudio" controls preload="metadata"></audio>
+  </div>
+  <div class="instructions">
+    استمع إلى المقطع الصوتي أعلاه، ثم اسحب كل جملة إلى إحدى خانات الترتيب أدناه حسب مدى
+    مطابقتها لما قيل فعلياً. <b>يُسمح بالتعادل</b> — ضع جملتين أو أكثر في نفس الخانة إذا
+    كانت دقتها متساوية. يجب وضع جميع الجمل قبل أن تتمكن من المتابعة.
+  </div>
+  <div id="pool"></div>
+  <div id="bins"></div>
+  <div id="status"></div>
+  <div class="nav-row">
+    <button id="backBtn">السابق</button>
+    <button id="nextBtn" disabled>التالي</button>
+  </div>
+  <div id="saveIndicator"></div>
+</div>
+
+<div id="doneScreen">
+  <h2 id="doneTitle">تم الانتهاء من المهمة</h2>
+  <p id="doneMessage">شكراً لمشاركتك.</p>
+</div>
+
+<script>
+// =====================================================================
+// CONFIG
+// =====================================================================
+// Paste your Apps Script Web App URL here (see apps_script_progress_backend.gs)
+const RESULTS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycby8EnTqcs6tVY-tGHMzFnFnZZAGOn-6b1JYMWpdBDX9_sAWKXqmXbmFnW2Ejtrhjmho/exec";
+const NUM_RANKS = 6;
+
+// =====================================================================
+// STATE
+// =====================================================================
+let tasks = [];                 // loaded from tasks.json
+let currentTaskIndex = 0;       // index into `tasks` of the sample currently shown
+let annotatorName = '';
+const savedResults = {};        // taskId -> { sentenceId: rank, ... }, merged from backend + local
+let sortableInstances = [];
+
+const introScreen = document.getElementById('introScreen');
+const taskScreen = document.getElementById('taskScreen');
+const doneScreen = document.getElementById('doneScreen');
+const doneTitle = document.getElementById('doneTitle');
+const doneMessage = document.getElementById('doneMessage');
+const annotatorNameInput = document.getElementById('annotatorNameInput');
+const startBtn = document.getElementById('startBtn');
+const introStatus = document.getElementById('introStatus');
+const progressText = document.getElementById('progressText');
+const progressBarFill = document.getElementById('progressBarFill');
+const pool = document.getElementById('pool');
+const binsContainer = document.getElementById('bins');
+const statusEl = document.getElementById('status');
+const backBtn = document.getElementById('backBtn');
+const nextBtn = document.getElementById('nextBtn');
+const saveIndicator = document.getElementById('saveIndicator');
+const taskAudio = document.getElementById('taskAudio');
+
+// =====================================================================
+// INTRO SCREEN: load tasks.json, then wire up Start/Resume
+// =====================================================================
+annotatorNameInput.addEventListener('input', () => {
+  startBtn.disabled = annotatorNameInput.value.trim().length === 0;
+});
+
+startBtn.addEventListener('click', async () => {
+  annotatorName = annotatorNameInput.value.trim();
+  if (!annotatorName) return;
+
+  startBtn.disabled = true;
+  introStatus.textContent = 'Loading your progress...';
+
+  try {
+    if (tasks.length === 0) {
+      const res = await fetch('tasks.json');
+      tasks = await res.json();
+    }
+
+    const progress = await fetchProgress(annotatorName);
+    Object.assign(savedResults, progress);
+
+    const firstUnfinishedIndex = tasks.findIndex(t => !(t.id in savedResults));
+
+    if (firstUnfinishedIndex === -1) {
+      // Everything is already done for this name
+      showAlreadyComplete();
+      return;
+    }
+
+    currentTaskIndex = firstUnfinishedIndex;
+    introScreen.style.display = 'none';
+    taskScreen.style.display = 'block';
+    renderTask(currentTaskIndex);
+
+  } catch (err) {
+    introStatus.textContent = 'Could not load your progress. Please check your connection and try again.';
+    startBtn.disabled = false;
+  }
+});
+
+async function fetchProgress(name) {
+  if (!RESULTS_ENDPOINT_URL || RESULTS_ENDPOINT_URL.indexOf('PASTE_YOUR') === 0) {
+    return {}; // backend not configured yet — start fresh, nothing to resume
+  }
+  const url = RESULTS_ENDPOINT_URL + '?name=' + encodeURIComponent(name);
+  const res = await fetch(url);
+  const data = await res.json();
+  if (data.status === 'ok') {
+    return data.completedTasks || {};
+  }
+  return {};
+}
+
+function showAlreadyComplete() {
+  introScreen.style.display = 'none';
+  doneScreen.style.display = 'block';
+  doneTitle.textContent = 'All done!';
+  doneMessage.textContent = `You've already completed all ${tasks.length} samples under this name. Thank you!`;
+}
+
+// =====================================================================
+// RENDER ONE TASK (sample)
+// =====================================================================
+function renderTask(index) {
+  const task = tasks[index];
+  const completedCount = Object.keys(savedResults).length;
+  progressText.textContent = `Sample ${index + 1} of ${tasks.length}  —  ${completedCount} completed so far`;
+  progressBarFill.style.width = Math.round((completedCount / tasks.length) * 100) + '%';
+
+  // Stop any playback from the previous sample, then load this sample's audio.
+  taskAudio.pause();
+  taskAudio.currentTime = 0;
+  taskAudio.src = task.audioUrl || '';
+
+  sortableInstances.forEach(s => s.destroy());
+  sortableInstances = [];
+
+  pool.innerHTML = '';
+  binsContainer.innerHTML = '';
+
+  const previousAnswer = savedResults[task.id] || null;
+
+  task.sentences.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'sentence-card';
+    card.dataset.id = s.id;
+    card.dir = 'rtl';
+    card.textContent = s.text;
+    if (!previousAnswer || !(s.id in previousAnswer)) {
+      pool.appendChild(card);
+    }
+  });
+
+  const binEls = [];
+  for (let r = 1; r <= NUM_RANKS; r++) {
+    const row = document.createElement('div');
+    row.className = 'rank-row';
+    row.innerHTML = `<div class="rank-label">الترتيب ${r}</div>`;
+    const bin = document.createElement('div');
+    bin.className = 'rank-bin';
+    bin.dataset.rank = r;
+    row.appendChild(bin);
+    binsContainer.appendChild(row);
+    binEls.push(bin);
+  }
+
+  if (previousAnswer) {
+    task.sentences.forEach(s => {
+      const rank = previousAnswer[s.id];
+      if (rank) {
+        const card = document.createElement('div');
+        card.className = 'sentence-card';
+        card.dataset.id = s.id;
+        card.dir = 'rtl';
+        card.textContent = s.text;
+        binEls[rank - 1].appendChild(card);
+      }
+    });
+  }
+
+  const allContainers = [pool, ...binEls];
+  allContainers.forEach(container => {
+    const s = new Sortable(container, {
+      group: 'ranking',
+      animation: 150,
+      onEnd: checkComplete
+    });
+    sortableInstances.push(s);
+  });
+
+  backBtn.disabled = (index === 0);
+  nextBtn.textContent = (index === tasks.length - 1) ? 'إنهاء' : 'التالي';
+  saveIndicator.textContent = '';
+  statusEl.classList.remove('error');
+
+  checkComplete();
+}
+
+function currentBins() {
+  return Array.from(binsContainer.querySelectorAll('.rank-bin'));
+}
+
+function computeRanksForCurrentTask() {
+  const result = {};
+  currentBins().forEach(bin => {
+    const rank = Number(bin.dataset.rank);
+    Array.from(bin.children).forEach(card => {
+      result[card.dataset.id] = rank;
+    });
+  });
+  return result;
+}
+
+function checkComplete() {
+  const task = tasks[currentTaskIndex];
+  const bins = currentBins();
+  const placed = bins.reduce((sum, b) => sum + b.children.length, 0);
+  const allPlaced = placed === task.sentences.length;
+
+  // Ranks actually used (i.e. bins with at least one sentence in them), ascending.
+  const usedRanks = bins
+    .filter(b => b.children.length > 0)
+    .map(b => Number(b.dataset.rank))
+    .sort((a, b) => a - b);
+
+  // Valid only if the used ranks are contiguous starting at 1 — e.g. {1,2,2,3} is
+  // fine, but {1,2,2,4} is not, since rank 3 was skipped.
+  const isContiguous = usedRanks.every((r, idx) => r === idx + 1);
+
+  if (!allPlaced) {
+    nextBtn.disabled = true;
+    statusEl.classList.remove('error');
+    statusEl.textContent = `تبقّى ${task.sentences.length - placed} جملة/جمل لم تُرتَّب.`;
+  } else if (!isContiguous) {
+    nextBtn.disabled = true;
+    statusEl.classList.add('error');
+    statusEl.textContent = 'ترتيب غير صحيح: لا يمكن تخطي رتبة. يجب استخدام الرتب بشكل متسلسل بدءاً من ١ دون ترك أي رتبة فارغة بين الرتب المستخدمة.';
+  } else {
+    nextBtn.disabled = false;
+    statusEl.classList.remove('error');
+    statusEl.textContent = 'تم ترتيب جميع الجمل.';
+  }
+}
+
+// =====================================================================
+// NAVIGATION — advancing is instant; saving happens in the background
+// =====================================================================
+backBtn.addEventListener('click', () => {
+  currentTaskIndex--;
+  renderTask(currentTaskIndex);
+});
+
+nextBtn.addEventListener('click', () => {
+  const ranks = computeRanksForCurrentTask();
+  const task = tasks[currentTaskIndex];
+  savedResults[task.id] = ranks;
+
+  // Fire the save in the background — don't block navigation on it.
+  queueSave(task.id, ranks);
+
+  if (currentTaskIndex === tasks.length - 1) {
+    finishAllTasks();
+  } else {
+    currentTaskIndex++;
+    renderTask(currentTaskIndex);
+  }
+});
+
+// ---- Background save queue with retry ----
+// Multiple saves can be in flight at once (annotators can move fast); each
+// is independent (Sheet appendRow calls don't conflict with each other), so
+// we don't need to serialize them — just track pending count for the indicator.
+let pendingSaves = 0;
+
+function updateSaveIndicator() {
+  if (pendingSaves === 0) {
+    saveIndicator.textContent = 'All changes saved ✓';
+  } else {
+    saveIndicator.textContent = `Saving ${pendingSaves} sample(s) in the background...`;
+  }
+}
+
+window.addEventListener('beforeunload', (e) => {
+  if (pendingSaves > 0) {
+    e.preventDefault();
+    e.returnValue = ''; // triggers the browser's generic "leave site?" confirmation
+  }
+});
+
+function queueSave(taskId, ranks, attempt) {
+  attempt = attempt || 1;
+  pendingSaves++;
+  updateSaveIndicator();
+
+  saveTaskToBackend(taskId, ranks)
+    .then(ok => {
+      pendingSaves--;
+      if (!ok && attempt < 5) {
+        // Retry with backoff (2s, 4s, 8s, 16s) rather than losing the sample.
+        setTimeout(() => queueSave(taskId, ranks, attempt + 1), attempt * 2000);
+      } else {
+        updateSaveIndicator();
+      }
+    })
+    .catch(() => {
+      pendingSaves--;
+      if (attempt < 5) {
+        setTimeout(() => queueSave(taskId, ranks, attempt + 1), attempt * 2000);
+      } else {
+        updateSaveIndicator();
+      }
+    });
+}
+
+async function saveTaskToBackend(taskId, ranks) {
+  if (!RESULTS_ENDPOINT_URL || RESULTS_ENDPOINT_URL.indexOf('PASTE_YOUR') === 0) {
+    return false; // backend not configured yet
+  }
+  try {
+    await fetch(RESULTS_ENDPOINT_URL, {
+      method: 'POST',
+      mode: 'no-cors', // Apps Script doesn't handle preflight; response is unreadable but request still sends
+      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+      body: JSON.stringify({ action: 'saveTask', name: annotatorName, taskId: taskId, ranks: ranks })
+    });
+    return true; // no-cors means we can't actually confirm success, just that it was sent
+  } catch (err) {
+    return false;
+  }
+}
+
+// =====================================================================
+// FINISH
+// =====================================================================
+function finishAllTasks() {
+  taskScreen.style.display = 'none';
+  doneScreen.style.display = 'block';
+  doneTitle.textContent = 'تم الانتهاء من جميع العينات';
+  doneMessage.textContent = 'شكراً لمشاركتك. تم حفظ جميع نتائجك.';
+}
+</script>
+
+</body>
+</html>
