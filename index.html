@@ -52,6 +52,11 @@
   #startBtn { background: #2563eb; color: white; padding: 10px 24px; }
   #startBtn:disabled { background: #aaa; cursor: not-allowed; }
   #introStatus { font-size: 13px; color: #777; margin-top: 8px; }
+  #dialectSelect {
+    width: 100%; box-sizing: border-box; padding: 10px 12px; font-size: 15px;
+    border: 1px solid #ccc; border-radius: 5px; direction: ltr; text-align: left;
+    font-family: inherit; margin-bottom: 16px; background: #fff;
+  }
   #doneScreen { display: none; text-align: center; padding: 40px 0; }
   #doneScreen button { margin-top: 16px; }
   #saveIndicator { font-size: 12px; color: #999; margin-top: 6px; height: 16px; }
@@ -71,7 +76,7 @@
     <br><br>
     Your progress is saved automatically after each sample, so you may close the page at any time and continue later, even from a different device. To resume the task, enter the <b>same name exactly</b> as you used previously.
     <br><br>
-    Please enter your name below to begin or resume.
+    To start/resume, select your Arabic dialect and enter your name.
   </div>
 
   <div class="instructions-block" dir="rtl" lang="ar" style="text-align:right;">
@@ -85,8 +90,14 @@
     <br><br>
     يتم حفظ تقدمك تلقائيًا بعد كل تسجيل صوتي، لذا يمكنك إغلاق الصفحة في أي وقت واستكمال المهمة لاحقًا، حتى من جهاز آخر. لاستئناف المهمة، أدخل <b>نفس الاسم تمامًا</b> الذي استخدمته سابقًا.
     <br><br>
-    يرجى إدخال اسمك أدناه لبدء المهمة أو استئنافها.
+    لبدء المهمة أو استئنافها، يرجى اختيار اللهجة العربية وإدخال اسمك.
   </div>
+  <label for="dialectSelect">Arabic Dialect</label>
+  <select id="dialectSelect">
+    <option value="" disabled selected>Select a dialect / اختر اللهجة</option>
+    <option value="egyptian">Egyptian Arabic — اللهجة المصرية</option>
+    <option value="emirati">Emirati Arabic — اللهجة الإماراتية</option>
+  </select>
   <label for="annotatorNameInput">Name</label>
   <input type="text" id="annotatorNameInput" placeholder="Enter your name (use must the same spelling every time)">
   <div>
@@ -134,9 +145,10 @@ const NUM_RANKS = 6;
 // =====================================================================
 // STATE
 // =====================================================================
-let tasks = [];                 // loaded from tasks.json
+let tasks = [];                 // loaded from the selected dialect's tasks file
 let currentTaskIndex = 0;       // index into `tasks` of the sample currently shown
 let annotatorName = '';
+let selectedDialect = '';       // 'egyptian' or 'emirati'
 const savedResults = {};        // taskId -> { sentenceId: rank, ... }, merged from backend + local
 let sortableInstances = [];
 
@@ -157,26 +169,33 @@ const backBtn = document.getElementById('backBtn');
 const nextBtn = document.getElementById('nextBtn');
 const saveIndicator = document.getElementById('saveIndicator');
 const taskAudio = document.getElementById('taskAudio');
+const dialectSelect = document.getElementById('dialectSelect');
 
 // =====================================================================
-// INTRO SCREEN: load tasks.json, then wire up Start/Resume
+// INTRO SCREEN: choose dialect, load the matching tasks file, wire up Start/Resume
 // =====================================================================
-annotatorNameInput.addEventListener('input', () => {
-  startBtn.disabled = annotatorNameInput.value.trim().length === 0;
+function updateStartButtonState() {
+  startBtn.disabled = annotatorNameInput.value.trim().length === 0 || selectedDialect === '';
+}
+
+annotatorNameInput.addEventListener('input', updateStartButtonState);
+
+dialectSelect.addEventListener('change', () => {
+  selectedDialect = dialectSelect.value;
+  updateStartButtonState();
 });
 
 startBtn.addEventListener('click', async () => {
   annotatorName = annotatorNameInput.value.trim();
-  if (!annotatorName) return;
+  if (!annotatorName || !selectedDialect) return;
 
   startBtn.disabled = true;
   introStatus.textContent = 'Loading your progress...';
 
   try {
-    if (tasks.length === 0) {
-      const res = await fetch('tasks.json');
-      tasks = await res.json();
-    }
+    const tasksFile = selectedDialect === 'egyptian' ? 'tasks_egyptian.json' : 'tasks_emirati.json';
+    const res = await fetch(tasksFile);
+    tasks = await res.json();
 
     const progress = await fetchProgress(annotatorName);
     Object.assign(savedResults, progress);
@@ -184,7 +203,7 @@ startBtn.addEventListener('click', async () => {
     const firstUnfinishedIndex = tasks.findIndex(t => !(t.id in savedResults));
 
     if (firstUnfinishedIndex === -1) {
-      // Everything is already done for this name
+      // Everything is already done for this name (in this dialect)
       showAlreadyComplete();
       return;
     }
