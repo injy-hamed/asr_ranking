@@ -135,6 +135,14 @@
 // =====================================================================
 // CONFIG
 // =====================================================================
+// Prevent the browser from restoring a previous scroll position on reload —
+// without this, refreshing after scrolling down (e.g. through rank bins)
+// can leave the page starting mid-way down instead of at the top.
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 // Paste your Apps Script Web App URL here (see apps_script_progress_backend.gs)
 const RESULTS_ENDPOINT_URL = "https://script.google.com/macros/s/AKfycby8EnTqcs6tVY-tGHMzFnFnZZAGOn-6b1JYMWpdBDX9_sAWKXqmXbmFnW2Ejtrhjmho/exec";
 const NUM_RANKS = 6;
