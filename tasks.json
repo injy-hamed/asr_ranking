@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "arzen/S01-C03-R01_042710-043665",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "كان كل سفري مضاد قصير فمش صحاب أكتشيلي ممكن نتعرف على حد يعني بس مش أكتر من كده"
+      },
+      {
+        "id": "artst",
+        "text": "كان كل سفري مدد وسيره فمش صحاب actually ممكن نتعرف على حد يعني بس مش أكتر من كده"
+      },
+      {
+        "id": "qwen3",
+        "text": "كان كل سفري مدد وسيارة فمش صحاب أكترلي ممكن نتعرف على حد يعني بس مش أكتر من كذا."
+      },
+      {
+        "id": "whisper",
+        "text": "كان كل صفري مدد وسيرة فمش صحاب ممكن نتعرف على حد يعني بس مش اكتر من كده"
+      },
+      {
+        "id": "humain",
+        "text": "كان كل سفري مضاد قصيرة فمش صحاب actually ممكن نتعرف على حد يعني بس مش أكتر من كده"
+      },
+      {
+        "id": "cohere",
+        "text": " كان كل سفري مدد قصيرة فمش صحاب actually ممكن نتعرف على حد يعنى بس مش اكتر من كده"
+      }
+    ],
+    "audioUrl": "audio/S01-C03-R01_042710-043665.wav"
+  },
+  {
+    "id": "arzen/S01-C03-R01_048492-048988",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "فإذا كنت قد تتغير قليلاً"
+      },
+      {
+        "id": "qwen3",
+        "text": "فأنتا شخصيتك لو أنت كنت مثلاً كيرلس شوية لأ بتتغير فجأة"
+      },
+      {
+        "id": "humain",
+        "text": "فأنت شخصيتك لو أنت كنت مثلا careless شوية لأ بتتغير فجأة؟"
+      },
+      {
+        "id": "cohere",
+        "text": " فانت شخصيتك لو انت كنت مثلا careless شوية لأ بتتغير فجأة"
+      },
+      {
+        "id": "artst",
+        "text": "فأنت شخصيتك لو أنت كنت مثلا kirls شوية لأ بتتغير فجأة"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "فإنت شخصيتك لو إنت كنت مثلا كيرليس شوية لأ بتتغير فجأة"
+      }
+    ],
+    "audioUrl": "audio/S01-C03-R01_048492-048988.wav"
+  },
+  {
+    "id": "arzen/S06-C03-R06_004300-004584",
+    "sentences": [
+      {
+        "id": "artst",
+        "text": "و تخصصت computer engineering"
+      },
+      {
+        "id": "whisper",
+        "text": "واتخذت الى الكمبيوتر انجينيرينج"
+      },
+      {
+        "id": "qwen3",
+        "text": "oitros os teis de computer engineering"
+      },
+      {
+        "id": "cohere",
+        "text": " و اتخصصت computer engineering"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "و اتخصصت في هندسة الكمبيوتر"
+      },
+      {
+        "id": "humain",
+        "text": "و تخصصت computer engineering"
+      }
+    ],
+    "audioUrl": "audio/S06-C03-R06_004300-004584.wav"
+  },
+  {
+    "id": "arzen/S06-C03-R06_006149-006857",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "حسناً، اخترت الكمبيوتر الانجينييري لأجل حبّة الـ coding عندما عرفت الـ cs"
+      },
+      {
+        "id": "cohere",
+        "text": " okay so أختارت ليه computer engineering عشان أنا فجأة حبيت ال coding لما عرفت ال cs"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "اوكي، إختارت ليه كمبيوتر إنجينيرينج عشان أنا فجأة بحبيت الكودينج لما عرفت سي اس"
+      },
+      {
+        "id": "humain",
+        "text": "okay so اخترت ليه computer engineering عشان أنا فجأة حبيت ال coding لما عرفت cs"
+      },
+      {
+        "id": "qwen3",
+        "text": "أوكى، سو اخترت لي كمبيوتر إنجنييرينج عشان أنا فجأة حبيت الكودينج لما عرفت c s"
+      },
+      {
+        "id": "artst",
+        "text": "و اختارت ليه computer engineering عشان فجأة بحبيت gooding لما عرفت السياسة"
+      }
+    ],
+    "audioUrl": "audio/S06-C03-R06_006149-006857.wav"
+  },
+  {
+    "id": "arzen/S06-C03-R06_077709-078739",
+    "sentences": [
+      {
+        "id": "cohere",
+        "text": " لإنه كنت طالع من ثانوية و كنت حاسس إن أنا شاطر جدا فجأة دخلت الجامعة و بقيت تايه و مش فاهم أي حاجة و مع أول midterm grade كانت fifty five percent في math"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "لانه كنت طالعة من سوية وكنت حاسس اني شاطر جدا فجأة دخلت الجامعة وبقيت تايه ومش فاهم أي حاجة ومع أول ميد تيرم جريد كانت 55 في المية كوف مات"
+      },
+      {
+        "id": "whisper",
+        "text": "لأنه كنت طلع من السوية و كنت حاسس أنا شطر جداً مفاجأة دخلت الجامعة و بقت تايه و مش راهم أي حاجة و مع أول mid-term grade كانت 55% كنت بفي math"
+      },
+      {
+        "id": "qwen3",
+        "text": "لإنه كنت رامي سوية وكنت حاسة أنا شاطر جداً فجأة دخلت الجامعة واتيه ومشيهم أي حاجة ومع أول midterm grade كانت fifty five percent كوف math"
+      },
+      {
+        "id": "humain",
+        "text": "لأنه كنت طالع من سوعية و كنت حاس اني شاطر جدا، فجأة دخلت الجامعة و بقيت تايه و مش فاهم أي حاجة و مع أول mid-term grade كانت fifty-five percent coof math"
+      },
+      {
+        "id": "artst",
+        "text": "لأنه كنت تراه منسوية و كنت حس نشطر جدا فجأة دخلت الجامعة و تايه و مش فاهمة أي حاجة و مع أول meat term grade كانت fiftyfive person تكون في مثل"
+      }
+    ],
+    "audioUrl": "audio/S06-C03-R06_077709-078739.wav"
+  },
+  {
+    "id": "arzen/S06-C03-R06_119773-120061",
+    "sentences": [
+      {
+        "id": "cohere",
+        "text": " فعكس الناس اللي شغالة في corporates برا"
+      },
+      {
+        "id": "artst",
+        "text": "عكس الناس اللي بشغلها في cooperates برا"
+      },
+      {
+        "id": "qwen3",
+        "text": "فا عكس الناس اللي بيشغله في كوبرتز برا"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "عكس الناس اللي بتشغله في كوبريتس بره"
+      },
+      {
+        "id": "humain",
+        "text": "فعكس الناس اللي بتشغلها في corporates بره"
+      },
+      {
+        "id": "whisper",
+        "text": "άξιες νέσεις που έπινε στο κούπερ της πορρός"
+      }
+    ],
+    "audioUrl": "audio/S06-C03-R06_119773-120061.wav"
+  },
+  {
+    "id": "arzen/S13-C03-R13_055781-057040",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "فلو حد كان عنده فيزا قل له مشارف ايه وانا كنت عندي الفيزا فكلمته مشارف ايه وعرفت ايه الحوار قالوا لي في كام في امريكا مشارف ايه والدنيا كان ترب حلو قوي"
+      },
+      {
+        "id": "qwen3",
+        "text": "فلو حد كان عنده فيزا يعني قل لهم شرفي وأنا كنت عندي الفيزا فكلمتهم شرفي وعرفت الحوار ويعني قالوا لي الكامب في كامب أمريكا وشرفي وودوني يعني كان تريب حلو أوي"
+      },
+      {
+        "id": "artst",
+        "text": "فلو حد كان عنده فيزا يعني قوله هو مش عارف ايه و انا كانت عندي الفيزا فكلمته مش عارف ايه و عرفت الحوار و يعني قالولي الcamp في camp في أمريكا مش عارف ايه و الدنيا يعني كانت trip حلوة قوي"
+      },
+      {
+        "id": "humain",
+        "text": "ف لو حد كان عنده visa يعني يقولهم مش عارف ايه و أنا كنت عندي ال visa فكلمتهم مش عارف إيه و عرفت ايه الحوار و يعني قالولي ال camp فيه camp في أمريكا و مش عارف إيه و أدوني يعني كان trip حلوة أوي"
+      },
+      {
+        "id": "cohere",
+        "text": " فلو حد كان عنده visa يعني يقولهم و مش عارف ايه، و أنا كانت عندي ال visa، فكلمتهم و مش عارف ايه و عرفت ايه الحوار و يعني قالولي ال camp في camp في أمريكا و مش عارف ايه، و ادوني يعني كانت trip حلوة أوي"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "فلو حد كان عنده فيزا يعني يقولهم مش عارف إيه وأنا كانت عندي الفيزا فكلمتهم مش عارف إيه وعرفت إيه الحوار يعني قالوا لي الكام في كام في أمريكا ومش عارف إيه ودووني يعني كان تريب حلو أوي"
+      }
+    ],
+    "audioUrl": "audio/S13-C03-R13_055781-057040.wav"
+  },
+  {
+    "id": "arzen/S13-C03-R13_071166-072673",
+    "sentences": [
+      {
+        "id": "artst",
+        "text": "هو انا عملت اصحاب بس مش بتاعت rope أكتر من هو لما كنت في أمريكا في الcamp هو leaders اللي هناك و كده بس يعني لسه بنتكلم كل فترة بنتكلم مع بعض و بس يعني بنتكلم شوية بنسأل على بعض يعني فاه"
+      },
+      {
+        "id": "humain",
+        "text": "هو أنا عملت صحاب بس مش بتاعت أوروبا أكتر من هو لما كنت في أمريكا في ال camp هو ال leaders اللي هناك و كده بس اه يعني لسه بنتكلم كل فترة بنتكلم مع بعض و بس يعني كل شوية بنسأل على بعض يعني ف اه"
+      },
+      {
+        "id": "whisper",
+        "text": "هون عملت صحاب بس مش بتاعت أوروبا أكتر من هو لما كنت في أمريكا في الكامب هو الليدرز اللي هناك وكده بس آه يعني لسه بنتكلم كل فترة بنتكلم مع بعض و... بس يعني كل شوية بنسأل على بعض يعني فآه آه"
+      },
+      {
+        "id": "cohere",
+        "text": " هو أنا عملت صحاب بس مش في بتاعة أوروبا أكتر من هو لما كنت في أمريكا في ال camp هو ال leaders اللي هناك و كده، بس أه يعني لسه بنتكلم كل فترة بنتكلم مع بعض و بس يعني كل شوية بنسأل على بعض يعني، فأه"
+      },
+      {
+        "id": "qwen3",
+        "text": "هون عملت أصحاب بس مش في تات أوروبا أكتر من هو لما كنت في أمريكا في الكامب هو ليديزر اللي هناك وكذا بس آه يعني لسه بنتكلم كل فترة بنتكلم مع بعض وبس يعني بنتكلم شوي بنسأل على بعض يعني فا"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "أنا عملت أصحاب بس مش بتاعت أوروبا أكتر من لما كنت في أمريكا في الكامب هو الليدرز اللي هناك وكده بس آه يعني لسه بنتكلم كل فترة بنتكلم مع بعض بس يعني كل شوية بنسأل على بعض يعني فا آه."
+      }
+    ],
+    "audioUrl": "audio/S13-C03-R13_071166-072673.wav"
+  },
+  {
+    "id": "arzen/S21-C03-R21_019460-019589",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "okay boy."
+      },
+      {
+        "id": "qwen3",
+        "text": "okay, bye bye."
+      },
+      {
+        "id": "whisper",
+        "text": "okay, bye-bye."
+      },
+      {
+        "id": "cohere",
+        "text": " بعد كده bye bye"
+      },
+      {
+        "id": "artst",
+        "text": "كان بوي بوي"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "ما كايبويه."
+      }
+    ],
+    "audioUrl": "audio/S21-C03-R21_019460-019589.wav"
+  },
+  {
+    "id": "arzen/S25-C03-R25_023439-023659",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "#أممم، ياس، إنت هنا."
+      },
+      {
+        "id": "artst",
+        "text": "جاس كتير"
+      },
+      {
+        "id": "humain",
+        "text": "yes كتير"
+      },
+      {
+        "id": "cohere",
+        "text": " yes كتير"
+      },
+      {
+        "id": "qwen3",
+        "text": "yes, get here."
+      },
+      {
+        "id": "whisper",
+        "text": "yes, get here."
+      }
+    ],
+    "audioUrl": "audio/S25-C03-R25_023439-023659.wav"
+  },
+  {
+    "id": "arzen/S25-C03-R25_043388-043855",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "و الجنب ده كان فيه actually cause related to research"
+      },
+      {
+        "id": "cohere",
+        "text": " و جنب ده كان فى actually جزء related to research"
+      },
+      {
+        "id": "qwen3",
+        "text": "we're going to be looking at actually because related to research."
+      },
+      {
+        "id": "artst",
+        "text": "و جنب ده كان فيه actually جزء related to research"
+      },
+      {
+        "id": "whisper",
+        "text": "وغنب ذاكن فيه actually goes related to research"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "و جنب ده كان فيه في الحقيقة أسباب متعلقة بالبحث"
+      }
+    ],
+    "audioUrl": "audio/S25-C03-R25_043388-043855.wav"
+  },
+  {
+    "id": "arzen/S25-C03-R25_134044-134366",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "فيه كيسات من دي كتير فالموضوع مش أحسن حاجة"
+      },
+      {
+        "id": "whisper",
+        "text": "في كيسات من دي كتير فالموضوع مش احسن حاجة"
+      },
+      {
+        "id": "artst",
+        "text": "في كيسات من دي كتير فالمضامش أحسن حاجة"
+      },
+      {
+        "id": "humain",
+        "text": "في cases من دي كتير فالموضوع مش أحسن حاجة"
+      },
+      {
+        "id": "qwen3",
+        "text": "فیکس از من دیگه تیر فرمودمش عالیه حقه"
+      },
+      {
+        "id": "cohere",
+        "text": " فى cases من دى كتير فالموضوع مش احسن حاجة"
+      }
+    ],
+    "audioUrl": "audio/S25-C03-R25_134044-134366.wav"
+  },
+  {
+    "id": "arzen/S25-C03-R25_139115-139911",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "حاجة اللي ممكن تقنعك بإنك تعمل حاجة أو ما تعملش حاجة إنك تعرف هي قد إيه بتأثر فيك أنت شخصياً"
+      },
+      {
+        "id": "qwen3",
+        "text": "حاجة اللي ممكن أكشندي تقنعك بأنك تعمل حاجة أو ما تعملش حاجة أنك تعرف هي أدى بتصير فيك أنت شخصياً"
+      },
+      {
+        "id": "artst",
+        "text": "الحاجة اللي ممكن actually تقنعك بانك تعمل حاجة و متعملش حاجة انك تعرف هي قد ايه بتأثر فيك انت شخصيا"
+      },
+      {
+        "id": "cohere",
+        "text": " الحاجة اللى ممكن actually تقنعك بإنك تعمل حاجة أو متعملش حاجة إنك تعرف هى قد أيه بتأثر فيك أنت شخصيا"
+      },
+      {
+        "id": "whisper",
+        "text": "حاجة اللي ممكن تقنعك بانك تعمل حاجة او ما تعملش حاجة انك تعرف هي قد ايه بتأثر فيك انت شخصيا"
+      },
+      {
+        "id": "humain",
+        "text": "الحاجة اللي ممكن actually تقنعك بأنك تعمل حاجة أو ما تعملش حاجة إنك تعرف هي قد ايه بتأثر فيك أنت شخصيا"
+      }
+    ],
+    "audioUrl": "audio/S25-C03-R25_139115-139911.wav"
+  },
+  {
+    "id": "arzen/S29-C03-R29_001190-002339",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "أنا مدرسة أمريكية وفرنسية وأنا مصري فرنسي"
+      },
+      {
+        "id": "artst",
+        "text": "okay هو أنا مدرستي national و french و أنا مصري فرنسي"
+      },
+      {
+        "id": "qwen3",
+        "text": "كือ وأنا مدرستي ناشنل وفرنس وأنا مصري فرنسي"
+      },
+      {
+        "id": "cohere",
+        "text": " okay هو أنا مدرستي national و french و أنا مصرى français"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "هو أنا مدرستي ناشيونال و فرنش و أنا مصري فرنسي"
+      },
+      {
+        "id": "humain",
+        "text": "okay هو أنا مدرستي national و french و أنا مصري فرونسيه"
+      }
+    ],
+    "audioUrl": "audio/S29-C03-R29_001190-002339.wav"
+  },
+  {
+    "id": "arzen/S29-C03-R29_099681-100066",
+    "sentences": [
+      {
+        "id": "artst",
+        "text": "مش هبقحب الموضوع ده يعني أو drather be respected"
+      },
+      {
+        "id": "cohere",
+        "text": " مش ه .. مش هبقى حابب الموضوع ده يعني i would rather be respected"
+      },
+      {
+        "id": "whisper",
+        "text": "أحب هذا الموضوع أحب أن أكون محترفاً"
+      },
+      {
+        "id": "qwen3",
+        "text": "مش مش أبي حب المودودا. يعني i would rather be respected."
+      },
+      {
+        "id": "humain",
+        "text": "مش ه .. مش هبقى حابب الموضوع ده يعني i would rather be respected"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "مش هبقى بحب الموضوع ده يعني أنا هبقى أحسن أحترم"
+      }
+    ],
+    "audioUrl": "audio/S29-C03-R29_099681-100066.wav"
+  },
+  {
+    "id": "arzen/S31-C03-R31_010194-011835",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "اوكي يعني عشان انا ساكن بعيد فيعني اليوم اللي بروح في الجامعة مش بعمل في حاجة غير الجامعة لو عندي شغل بس اليوم اللي بعد ذيها خلصه بس يومي عادة يبقى بصحب بنزل الجامعة برجع من الجامعة وبنام"
+      },
+      {
+        "id": "cohere",
+        "text": " okay يعني عشان أنا ساكن بعيد فيعني انا اليوم اللي بروح فيه الجامعة مش .. مش بعمل فيه حاجة غير الجامعة، لو عندي شغل بس لليوم اللي بعديه هخلصه، بس يومي عادة بيبقى بصحى، بنزل الجامعة، برجع من الجامعة و بنام"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "أوكي عشان أنا ساكن بعيد يعني اليوم اللي بروح فيه الجامعة مش بعمل فيه حاجة غير الجامعة لو عندي شغل بس لليوم اللي بعد ديه أخلصه بس يومي عادة بيبقى بصحى بنزل الجامعة برجع من الجامعة وبنام"
+      },
+      {
+        "id": "artst",
+        "text": "okay يعني عشان انا ساكن بقيت ف يعني انا اليوم بروح في الجامعة مش مش بعمل في حاجة غير الجامعة لو عندي شغل بس اليوم اللي بعد ديها خلصه بس يومي على اتهام بيبقى بصحة و بنزل الجامعة برجع من الجامعة و بنات"
+      },
+      {
+        "id": "qwen3",
+        "text": "أمم، okay، يعني عشان أنا ساكن بعيد، فيعني اليوم اللي بروح فيه الجامعة مش مش بعمل فيه حاجة غير الجامعة، ااا لو عندي شغل بس اليوم اللي بعد زيا خلصه، بس يومي عادة هم يبقوا بصحى، بنزل الجامعة، برجع من الجامعة وبنام."
+      },
+      {
+        "id": "humain",
+        "text": "okay يعني عشان أنا ساكن بعيد فيعني لو اليوم اللي بروح فيه الجامعة مش .. مش بعمل فيه حاجة غير الجامعة لو عندي شغل بس لليوم اللي بعديها هخلصه بس يومي عادة بيبقى بصحى بنزل الجامعة برجع من الجامعة و بنام"
+      }
+    ],
+    "audioUrl": "audio/S31-C03-R31_010194-011835.wav"
+  },
+  {
+    "id": "arzen/S34-C03-R34_074037-075390",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "أنني أقوم بالقاتل لأي شيء مهما كانت صعبة أحاول القاتل و لا أستطيع إعادة القتل حتى أن أفقد الأمل نهائياً لكن هذا يحدث بعد وقت"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "إن أنا بفايت للحاجة مهما كانت صعبة بحاول أفايت علشان و بنيفر جيف أب يعني لغاية لما أفقد الأمل نهائيا بس يعني ده بيحصل بعد وقت الحمد لله يعني."
+      },
+      {
+        "id": "cohere",
+        "text": " أن أنا ب .. ب fight للحاجة مهما كانت صعبة، بحاول ا fight عشان .. و ب never give up يعني لغاية لما افقد الأمل نهائيا بقى، بس يعني ده بيحصل بعد وقت الحمد لله يعني"
+      },
+      {
+        "id": "qwen3",
+        "text": "إن أنا ببفايت للحاجة مهما كانت هصعبة بحاول أفايت عشان وبنيفر جيفابي يعني لقيت لهم مفقود الأمل نهائيًا بس يعني دا بيحصل بعد وقت الحمد لله."
+      },
+      {
+        "id": "artst",
+        "text": "إن أنا بفايت للحاجة مهما كانت صعبة و بحاولها فايت عشان و bunever give up يعني الغاية لما فقد الأمل النهائيا بس يعني ده بيحصل بعد وقت الحمد لله"
+      },
+      {
+        "id": "humain",
+        "text": "ان انا ب .. ب fight للحاجة مهما كانت صعبة بحاول أ fight عشان و ب never give up يعني لغاية لما افقد الأمل نهائيا بقى بس يعني ده بيحصل بعد وقت الحمد لله يعني"
+      }
+    ],
+    "audioUrl": "audio/S34-C03-R34_074037-075390.wav"
+  },
+  {
+    "id": "arzen/S34-C03-R34_093666-094495",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "بس مش حاسس إن هو مثلا شغلك عن حاجات تانية أهم في الحياة إن إنت تبقي في كونتكت مع الناس فعلا face to face."
+      },
+      {
+        "id": "whisper",
+        "text": "بس مش حاسس إن هو مثلاً شغلك عن حاجات تانية أهم في الحياة إن إنت تبيين كونتاكت مع الناس فعلاً فيس تو فيس؟"
+      },
+      {
+        "id": "artst",
+        "text": "بس مش حاسس ان هو مثلا شغلك عن حاجات تانية اهم في الحياة ان انت تبيه incontact مع الناس فعلا facetoface"
+      },
+      {
+        "id": "cohere",
+        "text": " بس مش حاسس أن هو مثلا شغلك عن حاجات تانية أهم في الحياة أن انت to be in contact مع الناس فعلا face to face؟"
+      },
+      {
+        "id": "qwen3",
+        "text": "بس مش حسس إن هو مثلاً شغلك عن حاجات تانية أهم في الحياة إن أنت تبيين كونتكت مع الناس فعلًا فيستو فيس"
+      },
+      {
+        "id": "humain",
+        "text": "بس مش حاسس ان هو مثلا شغالك عن حاجات تانية أهم في الحياة إن أنت تبي in contact مع الناس فعلا face to face"
+      }
+    ],
+    "audioUrl": "audio/S34-C03-R34_093666-094495.wav"
+  },
+  {
+    "id": "arzen/S37-C03-R37_014882-016314",
+    "sentences": [
+      {
+        "id": "cohere",
+        "text": " يعني هي على حسب بس عادة انا بحب الحفلات زي مثلا music work بقى و soundclash و الحاجات اللي جاية دي فانا عاجباني جدا يعني بحب اعملها عادة في ال weekend غير كده بيبقى family day بقى ان انت فاهم تخرج مع عيلتك و الجو ده"
+      },
+      {
+        "id": "artst",
+        "text": "يعني هي يعني حسب بس عادتها بحب الحفلات زي مثلا music fork بقى و sound class في الحاجات الرجاية دي فأنا عاجبانى جدا بحب اعملها عندة في الweekend غير كده بيبقى في عاملى ده يبقى ان انت ما ينتغرج مع انتك و مجودة"
+      },
+      {
+        "id": "qwen3",
+        "text": "يعني هي على حسب بس عادة أنا بحب الحفلات زي مثلاً ميوزك فولك بقى وسام كلاش في الحاجات اللي جاية دي فناعجاني جدا يعني بحب أعمل عدتا في الويكенд غير كذا بقى عائلتي ذي بقى إنت مين تخرج مع عيلتك وقولة"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "يعني هي على حسب بس عادة أنا بحب الحفلات زي مثلا music work بقى و sound clash و الحاجات اللي جاية دي فأنا عجباني جدا يعني بحب أعملها عادة في ال weekend غير كده بيبقى family day بقى إن انت ما تاني تخرج مع عيلتك والجو ده"
+      },
+      {
+        "id": "whisper",
+        "text": "يعني هي على حسب بس عادة بحب الحفلات زي مثلا music park بقى و sound clash و الحاجات اللي جاية دي فانا عاجباني جدا يعني بحب أعملها عادة في الويكند غير كده بيبقى family day بقى ان انت بقيم تخرج مع عائلتك و الجو ده"
+      },
+      {
+        "id": "humain",
+        "text": "يعني هي على حسب بس عادة انا بحب الحفلات زي مثلا music fork بقى و sound class و الحاجات اللي جاية دي فأنا عاجباني جدا يعني بحب أعملها عادة في ال weekend غير كده بيبقى family day بقى ان انت بعدين تخرج مع عيلتك و الجو ده"
+      }
+    ],
+    "audioUrl": "audio/S37-C03-R37_014882-016314.wav"
+  },
+  {
+    "id": "arzen/S38-C03-R38_005873-006159",
+    "sentences": [
+      {
+        "id": "qwen3",
+        "text": "smester två man isch all smester två"
+      },
+      {
+        "id": "whisper",
+        "text": "det er som om jeg ser to mennesker."
+      },
+      {
+        "id": "cohere",
+        "text": " semester two ،معلش اه semester two"
+      },
+      {
+        "id": "humain",
+        "text": "semester two maricon semester two."
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "سمستر تووم، ماشي، سمستر تووم."
+      },
+      {
+        "id": "artst",
+        "text": "مثل توهم معناهاش شعر سمسرتوهم أوكي"
+      }
+    ],
+    "audioUrl": "audio/S38-C03-R38_005873-006159.wav"
+  },
+  {
+    "id": "zaebuc/speakerS01-ZAEBUC-R01_054701-055015",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "ربما هذا البعض مخصص"
+      },
+      {
+        "id": "qwen3",
+        "text": "maybe هذا بعد cultural كله cultural"
+      },
+      {
+        "id": "artst",
+        "text": "ما في هذا البعد البالترول إلا culture"
+      },
+      {
+        "id": "cohere",
+        "text": " ممكن هذا بعد cultural كلنا cultural"
+      },
+      {
+        "id": "humain",
+        "text": "maybe هذا بعد cultural"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "ربما هذا بعد الثقافة كلها ثقافية"
+      }
+    ],
+    "audioUrl": "audio/speakerS01-ZAEBUC-R01_054701-055015.wav"
+  },
+  {
+    "id": "zaebuc/speakerS01-ZAEBUC-R01_073046-074142",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "you're welcome. i was going to say the one they said about female students we can talk about in any. it's not really common to travel alone or live alone as a woman."
+      },
+      {
+        "id": "whisper",
+        "text": "oh, you're welcome. i was gonna say, and the one they said about female students, we can talk about the nanny, it's not really common to travel alone or live alone as a woman."
+      },
+      {
+        "id": "qwen3",
+        "text": "oh, you're welcome. i was gonna say, and the the one they said about female students, we can talk about the nanny. it's not really common to travel alone or live alone as a woman."
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "\"أقول لك: \"\"أعتقد أن ما قلته عن الطلاب الإناث عن السفر ليس مجرد سفر أو العيش لوحده\"."
+      },
+      {
+        "id": "cohere",
+        "text": " - (والله يرحب. i was gonna say, and the one they said about female students, we can talk about the nanny, it's not really common to travel alone or live alone as a woman.)"
+      },
+      {
+        "id": "artst",
+        "text": "you will come i will get a say and they wont they set about female students we cant tock about أنه يعني its not really common to travel alone or live alone as a woman"
+      }
+    ],
+    "audioUrl": "audio/speakerS01-ZAEBUC-R01_073046-074142.wav"
+  },
+  {
+    "id": "zaebuc/speakerS01-ZAEBUC-R01_093597-094210",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "stereotype?"
+      },
+      {
+        "id": "whisper",
+        "text": "stereotype, or we can say in the men in the middle east, and he's more protective out of the team."
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "يمكن القول إن الرجال في الشرق الأوسط أكثر حماية"
+      },
+      {
+        "id": "qwen3",
+        "text": "stereotype, or we can say that men in the middle east are more protective. أرفتي."
+      },
+      {
+        "id": "cohere",
+        "text": " مثلاً: نستربية؟ و نستطيع أن الرجال في الشرق الأوسط أكثر تحديداً"
+      },
+      {
+        "id": "artst",
+        "text": "لذلك لم يكن لدينا من المدن التي يعني لم تكن عرفتها"
+      }
+    ],
+    "audioUrl": "audio/speakerS01-ZAEBUC-R01_093597-094210.wav"
+  },
+  {
+    "id": "zaebuc/speakerS01-ZAEBUC-R01_106622-108505",
+    "sentences": [
+      {
+        "id": "artst",
+        "text": "في العالم العربي العالمي العربي العربي العربي العربي العربي العربي و العالمي العربي العربي العربي العربي العربي العربي العربي"
+      },
+      {
+        "id": "qwen3",
+        "text": "for suggestion number two, i was thinking maybe we can do. yani, mob shart the suggestion from their side. maybe from our side. yani, here in our country, we can yani encourage studying abroad more. now this is not really something they can do. arafte."
+      },
+      {
+        "id": "whisper",
+        "text": "for suggestion number two, i was thinking maybe we can do مبشرط السجسشن from their side, maybe from our side يعني هني in our country, we can encourage studying abroad more this is not really something they can do عرفتِ؟"
+      },
+      {
+        "id": "cohere",
+        "text": " for suggestion number two i was thinking maybe we can do يعني مو بشرط ال suggestion from their side maybe from our side. يعني هني in our country we can يعني encourage studying abroad more. this is not really something they can do. عرفتي؟"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "لا يمكنهم تشجيع الدراسة في الخارج أكثر"
+      },
+      {
+        "id": "humain",
+        "text": "for suggestion number two i was thinking maybe we can do يعني مو بشرط ال suggestion from their side, maybe from our side, يعني هني in our country we can يعني encourage studying abroad more this is not really something they can do, عرفتي?"
+      }
+    ],
+    "audioUrl": "audio/speakerS01-ZAEBUC-R01_106622-108505.wav"
+  },
+  {
+    "id": "zaebuc/speakerS02-ZAEBUC-R02_086030-086312",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "لا، هذا لا يعقل، ماذا تتوقع من موظفيها؟"
+      },
+      {
+        "id": "cohere",
+        "text": " لا، هذا ما يحصل. ماذا تتوقع من مساعدتها؟"
+      },
+      {
+        "id": "qwen3",
+        "text": "no, it does make sense. what does she expect from her employees?"
+      },
+      {
+        "id": "whisper",
+        "text": "no, it does make sense. what does she expect from her employees?"
+      },
+      {
+        "id": "artst",
+        "text": "هنا و الdoesnt excelse و الdish expect from her employees"
+      },
+      {
+        "id": "humain",
+        "text": "no, it does make sense. how does she expect from her employees?"
+      }
+    ],
+    "audioUrl": "audio/speakerS02-ZAEBUC-R02_086030-086312.wav"
+  },
+  {
+    "id": "zaebuc/speakerS02-ZAEBUC-R02_102449-102829",
+    "sentences": [
+      {
+        "id": "whisper",
+        "text": "yeah, you can. i'm about to have some thoughts, you never know."
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "هي يمكن بعد أحس يمكن بعد similar thoughts you never know"
+      },
+      {
+        "id": "cohere",
+        "text": " ايه يمكن انا بعد احس يمكن بعد similar thoughts you never know"
+      },
+      {
+        "id": "artst",
+        "text": "هاي يمكن أنا بعد أحس يمكن بعد تسميله بطلات سينو برنوم"
+      },
+      {
+        "id": "humain",
+        "text": "إيه يمكن أنا بعد أحس يمكن بعد similar thoughts you never know"
+      },
+      {
+        "id": "qwen3",
+        "text": "ه يمكن أنا بعد أحس يمكن بعد سومنا رثات سنعرف نو"
+      }
+    ],
+    "audioUrl": "audio/speakerS02-ZAEBUC-R02_102449-102829.wav"
+  },
+  {
+    "id": "zaebuc/speakerS04-ZAEBUC-R07_051775-052139",
+    "sentences": [
+      {
+        "id": "qwen3",
+        "text": "هاي روح يساب ااا دجيري أودت."
+      },
+      {
+        "id": "artst",
+        "text": "هاي روحي شعب degree audit"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "ها روحى صاب degree audit"
+      },
+      {
+        "id": "whisper",
+        "text": "روحي يساب دقري أودت"
+      },
+      {
+        "id": "humain",
+        "text": "ها روحي ساب degree audit]"
+      },
+      {
+        "id": "cohere",
+        "text": " روحي sap degree audit"
+      }
+    ],
+    "audioUrl": "audio/speakerS04-ZAEBUC-R07_051775-052139.wav"
+  },
+  {
+    "id": "zaebuc/speakerS04-ZAEBUC-R07_053249-053498",
+    "sentences": [
+      {
+        "id": "cohere",
+        "text": " عالية الـ regions"
+      },
+      {
+        "id": "artst",
+        "text": "أول دريجنز أنا ما أخذت هذه المودة"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "أوالد ريجينز انا ماخدت هالمواد"
+      },
+      {
+        "id": "humain",
+        "text": "اه وال [regions انا ما اخذت هاي الماده"
+      },
+      {
+        "id": "whisper",
+        "text": "აველდრიჯნზე ანამ ახათ თალმადე."
+      },
+      {
+        "id": "qwen3",
+        "text": "آو لد ریجنز اما خاطر مال می‌ده."
+      }
+    ],
+    "audioUrl": "audio/speakerS04-ZAEBUC-R07_053249-053498.wav"
+  },
+  {
+    "id": "zaebuc/speakerS04-ZAEBUC-R09_111572-112026",
+    "sentences": [
+      {
+        "id": "cohere",
+        "text": " المشكلة الكيبورد اللي عندي في الكمبيوتر ما فيه عربي"
+      },
+      {
+        "id": "humain",
+        "text": "أنا مشكله ال keyboard] اللي عندي في ال computer ما فيه عربي."
+      },
+      {
+        "id": "qwen3",
+        "text": "أمم أنا مشكلة الكيبورد اللي عندي في الكمبيوتر ما في عربي."
+      },
+      {
+        "id": "whisper",
+        "text": "أنا مشكلة الكيبورد اللي عندي في الكمبيوتر ما فيه عربي"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "أنا مشكلة الكيبورد اللي عندي في الكمبيوتر ما في عربي"
+      },
+      {
+        "id": "artst",
+        "text": "أنا مشكلة الكيبورد اللي عندي في الكمبيوتر ما في عربي"
+      }
+    ],
+    "audioUrl": "audio/speakerS04-ZAEBUC-R09_111572-112026.wav"
+  },
+  {
+    "id": "zaebuc/speakerS04-ZAEBUC-R09_193378-194435",
+    "sentences": [
+      {
+        "id": "artst",
+        "text": "أو في عندنا مادة اسمها في مادة اسمها إمارة ستاديز و في مادة اسمها history of the youth ايه مستر يعني لو سمحت"
+      },
+      {
+        "id": "qwen3",
+        "text": "أو في عندنا مادة اسمها في مادة اسمها إمرت ستديز وفي مادة اسمها هستوري أو فزية"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "في عندنا مادة اسمها في مادة اسمها emirates studies وفي مادة اسمها history of the uae"
+      },
+      {
+        "id": "whisper",
+        "text": "في عندنا مادة اسمها في مادة اسمها وفي مادة اسمها من العربية لو سمحتي"
+      },
+      {
+        "id": "humain",
+        "text": "أوه في عندنا ماده اسمها في مادة اسمها emirate studies] وفي ماده اسمها history of the uae] history of ai تتكلم؟"
+      },
+      {
+        "id": "cohere",
+        "text": " في عندنا مادة اسمها emart studies و مادة اسمها history of the uae بالعربية لو سمحت"
+      }
+    ],
+    "audioUrl": "audio/speakerS04-ZAEBUC-R09_193378-194435.wav"
+  },
+  {
+    "id": "zaebuc/speakerS07-ZAEBUC-R08_071659-074191",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "and بعد تعرفين شو يعني مثلاً الحين مثلا مثلا أنا مثلا أستخدم 'aarfour] عندي مثلا application share application] فأنا أقول بدال مثلا ما أشتري من جمعيه ثانيه خليني أحصل points عند 'carfour] فإذا هم يسوون customer إنه يعني loyalty program بي بيجونهم يعني مثلا بيون أحسن نشتري"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "بعد تعرفين شو يعني مثلا الحين مثلا مثلا انا مثلا استخدم كارفور عندي مثلا application share application فانا اقول بدل مثلا ما اشتري من جمعية تانية خليني احصل points عند كارفور فاذا هم يصاوبون customer loyalty program بيونهم يعني مثلا بيون احسن نشتري"
+      },
+      {
+        "id": "artst",
+        "text": "بعدها عرفي شو يعني مثلا الحين مثلا انا مثلا استخدم كارفور عندي مثلا cation شير application فانا اقول ودا مثلا مواش تريد الجمعة الثانية خليني احاصل points عند الكارفور اذا هم بيكون كاستمر يعني loyalty program بيونهم يعني مثلا بيقول احسن نشتريهم"
+      },
+      {
+        "id": "cohere",
+        "text": " بعد تعرفين شو يعني مثلا الحين مثلا مثلا أنا مثلا أستخدم كارفور عندي مثلا أبليكيشن شير أبليكيشن فأنا أقول بدل مثلا ما أشتري من جمعية ثانية خليني أحصل points عند كارفور فإذا هم يسوون customer إنه يعني loyalty program بي بيونهم يعني مثلا بيقولون أحسن نشتري"
+      },
+      {
+        "id": "qwen3",
+        "text": "بعد تعرفين شو يعني مثلا الحين مثلا مثلا أنا مثلا أستخدم كارفور عندي مثلا أפלيكيشن شير أפלيكيشن فأنا أقول دار مثلا ما أشتري من جمعية ثانية خلني أحصل بوينتس عند كارفور فإذا هم يسون كاستمر إنه يعني لويالتي بروغرام بي بي يو بي ينهم يعني مثلا بيقول أحسن نشتري"
+      },
+      {
+        "id": "whisper",
+        "text": "و... بعد تعرفين شو؟ يعني مثلاً، الحين مثلاً مثلاً أنا مثلاً أستخدم carrefour عندي مثلاً application share application فأنا أقول بدلاً مثلاً ما أشتري من جمعية ثانية خلني أحصل points عن carrefour فإذا هم يصبحوا customer loyalty program بيقولهم يعني مثلاً بيقول أحسن نشتري"
+      }
+    ],
+    "audioUrl": "audio/speakerS07-ZAEBUC-R08_071659-074191.wav"
+  },
+  {
+    "id": "zaebuc/speakerS07-ZAEBUC-R11_031256-031415",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "لوجه سفكر."
+      },
+      {
+        "id": "whisper",
+        "text": "muchas gracias, oscar."
+      },
+      {
+        "id": "artst",
+        "text": "كل وجبة الفطر"
+      },
+      {
+        "id": "qwen3",
+        "text": "okay, which is a credit card."
+      },
+      {
+        "id": "cohere",
+        "text": " في وجه سفكر"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "كيوكيك يا ثنيان"
+      }
+    ],
+    "audioUrl": "audio/speakerS07-ZAEBUC-R11_031256-031415.wav"
+  },
+  {
+    "id": "zaebuc/speakerS08-ZAEBUC-R08_075550-075913",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "ما احس اوكي هذي الاثنين so far يعني"
+      },
+      {
+        "id": "whisper",
+        "text": "لا أحس أوكي هذين الاثنين سوفار يعني"
+      },
+      {
+        "id": "cohere",
+        "text": " لا أحس أوكي هذين الإثنين so far يعني."
+      },
+      {
+        "id": "artst",
+        "text": "ما أحس أوكي هذا الاثنين سوفار يعني"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "واه أحس اوكي هادي الإثنين so far يعني"
+      },
+      {
+        "id": "qwen3",
+        "text": "وا أحس أوكيه هذين الاثنين صفار يعني."
+      }
+    ],
+    "audioUrl": "audio/speakerS08-ZAEBUC-R08_075550-075913.wav"
+  },
+  {
+    "id": "zaebuc/speakerS08-ZAEBUC-R11_028208-028494",
+    "sentences": [
+      {
+        "id": "cohere",
+        "text": " design. احنا اخذت لي business sorry."
+      },
+      {
+        "id": "humain",
+        "text": "design احنا اخدت بيه business sorry."
+      },
+      {
+        "id": "qwen3",
+        "text": "ديزайн. إحنا أخذت لي بيزنس صارى."
+      },
+      {
+        "id": "whisper",
+        "text": "ديزاين احنا اخذت بيو بيزنس سوري"
+      },
+      {
+        "id": "artst",
+        "text": "ديزاين إحنا أوخرتني بالزمن الصالح"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "تصميم احنا اه خلصني بزنز سوري"
+      }
+    ],
+    "audioUrl": "audio/speakerS08-ZAEBUC-R11_028208-028494.wav"
+  },
+  {
+    "id": "zaebuc/speakerS10-ZAEBUC-R12_018407-018801",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "يعني هو كلها عن الفاشن ديزاين تقريبا"
+      },
+      {
+        "id": "artst",
+        "text": "يعني هو كله عن equational design to prevent"
+      },
+      {
+        "id": "whisper",
+        "text": "يعني من كل عام الفاشن ديزاين تقريبا"
+      },
+      {
+        "id": "qwen3",
+        "text": "يعني وكله عن فاشن ديزاين تقريبا."
+      },
+      {
+        "id": "humain",
+        "text": "يعني ممكن عن ال fashion design تقريبا"
+      },
+      {
+        "id": "cohere",
+        "text": " يعني هو كله عن فاشن ديزاين تقريباً"
+      }
+    ],
+    "audioUrl": "audio/speakerS10-ZAEBUC-R12_018407-018801.wav"
+  },
+  {
+    "id": "zaebuc/speakerS17-ZAEBUC-R15_011634-011869",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "هي احسن شايك ابيض"
+      },
+      {
+        "id": "qwen3",
+        "text": "ها احسن شاید کابیت."
+      },
+      {
+        "id": "artst",
+        "text": "here has an chancel beat"
+      },
+      {
+        "id": "cohere",
+        "text": " هي أحسن شي كوبيت"
+      },
+      {
+        "id": "whisper",
+        "text": "hei, ahsen, että se ei kopioitu."
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "هي أحسن شاي كوبي"
+      }
+    ],
+    "audioUrl": "audio/speakerS17-ZAEBUC-R15_011634-011869.wav"
+  },
+  {
+    "id": "zaebuc/speakerS17-ZAEBUC-R15_019165-019451",
+    "sentences": [
+      {
+        "id": "qwen3",
+        "text": "wait, which one is it? is it one?"
+      },
+      {
+        "id": "artst",
+        "text": "وهي توش وانا زيت هي واحد صح"
+      },
+      {
+        "id": "cohere",
+        "text": " وايت وايش ظن إز ؟ أي واحد صح"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "- انتظر، أيهما؟ - واحد صحيح"
+      },
+      {
+        "id": "whisper",
+        "text": "wait, which one is it? i don't know."
+      },
+      {
+        "id": "humain",
+        "text": "wait, which one is it? أي واحد صح"
+      }
+    ],
+    "audioUrl": "audio/speakerS17-ZAEBUC-R15_019165-019451.wav"
+  },
+  {
+    "id": "zaebuc/speakerS17-ZAEBUC-R15_042750-042985",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "كيف it's sick good quality achieve?"
+      },
+      {
+        "id": "whisper",
+        "text": "like if it's a good quality of tea."
+      },
+      {
+        "id": "qwen3",
+        "text": "make it sick. good quality and cheap."
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "أريد أن أجد جودة جيدة"
+      },
+      {
+        "id": "artst",
+        "text": "و أنا كيفكسك قلت quality و تشي"
+      },
+      {
+        "id": "cohere",
+        "text": " good quality وجي"
+      }
+    ],
+    "audioUrl": "audio/speakerS17-ZAEBUC-R15_042750-042985.wav"
+  },
+  {
+    "id": "zaebuc/speakerS17-ZAEBUC-R15_052499-053468",
+    "sentences": [
+      {
+        "id": "seamless_m4t",
+        "text": "يعني كل الشغل عليها هي تشوف هل الشركات الصغيرة دومهم لازم يسوون التعبئة والتغليف و لايك manufacturing part هذا هو"
+      },
+      {
+        "id": "cohere",
+        "text": " يعني كل الشغل عليها هي ليك هاي اجوف ال small businesses دوم هم لازم يسوون ال packaging و like they really need to have..."
+      },
+      {
+        "id": "qwen3",
+        "text": "يعني كل الشغل عليها هي like ها أشوف small businesses دوم هم لازم يسوون ال packaging وlike they really the manufacturing part هذا هو"
+      },
+      {
+        "id": "humain",
+        "text": "يعني كل الشغل عليها هي لك هاي أشوف هال small businesses دومهم لازم يسوون ال packaging]. manufacturing part] هذا هو."
+      },
+      {
+        "id": "artst",
+        "text": "يعني كل الشغل عليها هي لك هذا الشهير عند سماع الbusiness دومهم لازم يسوون الpackagering like very many oratoring part other"
+      },
+      {
+        "id": "whisper",
+        "text": "كل الشغل عليها هى ها اشوف هالبزنسيس دوما هم لازم يسوون الباكجينج المانفاكترينج بارت هادا هو"
+      }
+    ],
+    "audioUrl": "audio/speakerS17-ZAEBUC-R15_052499-053468.wav"
+  },
+  {
+    "id": "zaebuc/speakerS18-ZAEBUC-R15_027178-028069",
+    "sentences": [
+      {
+        "id": "humain",
+        "text": "native collaboration with other brands."
+      },
+      {
+        "id": "artst",
+        "text": "mactive collaboration with the other prints"
+      },
+      {
+        "id": "qwen3",
+        "text": "active collaboration with other brands."
+      },
+      {
+        "id": "whisper",
+        "text": "collaboration with other brands."
+      },
+      {
+        "id": "cohere",
+        "text": " negative collaboration with uh other brands"
+      },
+      {
+        "id": "seamless_m4t",
+        "text": "التعاون السلبي مع العلامات التجارية الأخرى"
+      }
+    ],
+    "audioUrl": "audio/speakerS18-ZAEBUC-R15_027178-028069.wav"
+  }
+]
